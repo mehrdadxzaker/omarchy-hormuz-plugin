@@ -1,0 +1,28 @@
+name: Validate plugin
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: plugin-validation-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  bridge-and-manifest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.11'
+      - name: Provider-free bridge and installer tests
+        run: python -m unittest discover -s tests -v
+      - name: Shell syntax
+        run: bash -n scripts/install.sh
+      - name: Omarchy manifest validation
+        run: |
+          curl --fail --silent --show-error --location --connect-timeout 10 --max-time 30 \
+            https://raw.githubusercontent.com/omacom/omarchy/9d48fc402edf51ae089a7c8c1f7b1a8611744bd8/bin/omarchy-plugin-validate \
+            -o "$RUNNER_TEMP/omarchy-plugin-validate"
+          bash "$RUNNER_TEMP/omarchy-plugin-validate" "$GITHUB_WORKSPACE"

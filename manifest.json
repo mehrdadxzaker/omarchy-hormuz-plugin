@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "io.hormuz.optimizer",
+  "name": "Hormuz Personal Optimizer",
+  "version": "0.1.0",
+  "author": "Hormuz contributors",
+  "license": "Apache-2.0",
+  "description": "Launch a saved Hormuz coding-agent profile, control local optimization, and inspect content-free benefit measurements from the Omarchy bar.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {"barWidget": "BarWidget.qml"},
+  "barWidget": {
+    "displayName": "Hormuz",
+    "category": "Development",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "profile": "personal-codex",
+      "hormuzCommand": "hormuz",
+      "stateDirectory": "",
+      "showLabel": true
+    },
+    "schema": [
+      {"key": "profile", "type": "string", "label": "Saved personal profile"},
+      {"key": "hormuzCommand", "type": "string", "label": "Hormuz executable (one name or absolute path)"},
+      {"key": "stateDirectory", "type": "string", "label": "Private state directory (empty uses Hormuz default)"},
+      {"key": "showLabel", "type": "boolean", "label": "Show Hormuz label"}
+    ]
+  }
+}

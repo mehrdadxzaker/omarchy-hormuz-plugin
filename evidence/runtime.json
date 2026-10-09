@@ -1,0 +1,198 @@
+{
+  "plugin": {
+    "id": "io.hormuz.optimizer",
+    "version": "0.1.0"
+  },
+  "testedAt": "2026-10-09",
+  "environment": {
+    "kind": "disposable Lima VM with real Omarchy shell and Hyprland",
+    "fullOmarchyIso": false,
+    "archUserland": "x86_64 under Rosetta",
+    "kernel": "Ubuntu 24.04 ARM64, 6.8.0-146-generic",
+    "systemd": "native Ubuntu 255.4 compatibility shims",
+    "omarchyCommit": "9d48fc402edf51ae089a7c8c1f7b1a8611744bd8",
+    "omarchyVersionFile": "4.0.0.alpha",
+    "quickshell": "0.3.2",
+    "hyprland": "0.56.2-4",
+    "qt": "6.12.0",
+    "python": "3.14.0",
+    "hormuzCommit": "99b0435765c1d4a736c1cf5438216f4c5c434364",
+    "hormuzVersion": "1.8.0",
+    "codex": "0.148.0",
+    "codexArchiveSha256": "1a36f762f6b3bef533bb86345ad9517661c2d84d53996a250cf2ca89d2cfee5a",
+    "tiktoken": "0.14.0",
+    "secureStore": "GNOME Secret Service, disposable unlocked collection"
+  },
+  "automated": {
+    "providerFreeUnitTests": 23,
+    "macosPassed": true,
+    "archPassed": true,
+    "officialManifestValidatorPassed": true,
+    "nativeQmlLintExitCode": 0,
+    "nativeQmlLintUnresolvedImports": 0,
+    "nativeQmlLintWarnings": "Dynamic Omarchy singleton properties and static qualification warnings",
+    "hormuzIntegrationTests": 24,
+    "actualCliWithoutCredentialsPassed": true
+  },
+  "nativeUi": {
+    "mouseOpen": true,
+    "mouseOffOn": true,
+    "mouseRefresh": true,
+    "outsideDismissalVisuallyConfirmed": true,
+    "escapeDismissalVisuallyConfirmed": true,
+    "keyboardSelectRefresh": true,
+    "invalidCliAndProfileDisableActions": true,
+    "settingsRecovery": true,
+    "verticalBarAnd18PixelFont": true,
+    "secondVirtualOutput": true,
+    "smallScreen": [
+      800,
+      600
+    ],
+    "keyboardScrollRevealsActions": true,
+    "cleanDesktopRestartPreservesProfileAndMeasurements": true
+  },
+  "realAgent": {
+    "syntheticTraffic": true,
+    "paidProviderCalls": 0,
+    "offForwardsToolOutput": true,
+    "missingResourcesFailOpenWithUnknownTokenEstimate": true,
+    "onProducesLosslessPathList": true,
+    "streamingCompletes": true,
+    "terminalDirectoryPreserved": true,
+    "duplicateLaunchRefused": true,
+    "popupCloseKeepsAgentAlive": true,
+    "normalExitReleasesLaunchLock": true,
+    "freshOnReport": {
+      "schema": "hormuz.omarchy-status.v1",
+      "ok": true,
+      "profile": "personal-codex",
+      "enabled": true,
+      "requests": 2,
+      "eligible": 1,
+      "transformed": 1,
+      "tokensSaved": 482,
+      "tokenPercent": 3.333,
+      "bytesSaved": 2147,
+      "bytePercent": 3.389,
+      "cacheReadTokens": 0
+    },
+    "providerObservations": [
+      {
+        "hasToolOutput": false,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": true,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": false,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": true,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": false,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": true,
+        "hasLosslessRepresentation": true,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": false,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": true,
+        "hasLosslessRepresentation": true,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": false,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": true,
+        "hasLosslessRepresentation": true,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": false,
+        "hasLosslessRepresentation": false,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      },
+      {
+        "hasToolOutput": true,
+        "hasLosslessRepresentation": true,
+        "upstreamAuthenticationCorrect": true,
+        "privateHeaderAbsent": true
+      }
+    ]
+  },
+  "bounds": {
+    "providerFixtureSeconds": 900,
+    "providerRequestBudget": 12,
+    "providerWorkerLimit": 4,
+    "providerSocketTimeoutSeconds": 10,
+    "widgetHttpRequests": 0,
+    "widgetPeriodicPolling": false,
+    "helperCliTimeoutSeconds": 8,
+    "helperMaxOutputBytes": 262144
+  },
+  "limitations": [
+    "Not a fresh Omarchy ISO or physical x86 qualification",
+    "Native systemd compatibility shims required under Rosetta",
+    "Hot-reload stability under Rosetta not qualified after a fixture stall",
+    "No global Super hotkey, lock screen, physical multi-monitor, production-provider or billing-benefit claim",
+    "Marketplace listing requires a maintainer to approve the exact validated commit"
+  ],
+  "installedSourceSha256": {
+    "manifest.json": "452d9a4eb8c95db0d8d66dbbd62e623ff134127b52b823d0377a7b682d8a4fb8",
+    "BarWidget.qml": "dca59942cf8c0101ac62c91cd1c843727062c217c7e36e22cb10bb2a2348b810",
+    "Panel.qml": "55c8b9b99cbb8932dc8819e41bda831f6a510cd6e643a2ab78582dac129ffb71",
+    "Service.qml": "2ab653d213a5898e6fcbe464f9e836575861deda978ec72ffa39daf61f38e5fd",
+    "Metric.qml": "153cb6fedb120fbd4a4393023af7a34681a47bf3f86cb36034b3404830ffdc6b",
+    "ActionButton.qml": "aebebc71f6fdd4aabac9c56520ecd7c4cbd031b28eb79a0bcbd6533bdf88b30e",
+    "Model.js": "47a0031f4197821d55c32141824999f6a1f117e323f6dcaab8ef5e68493b8cda",
+    "scripts/hormuz_plugin.py": "f6d9e9734ad4cf77ee284a9d848825ae046c39189dcd097ed159babd92563091",
+    "scripts/install.sh": "7a31b90ceb740320b39c5cf6b6ca74e74223f3f0ece24052574822fcdc3e6bda"
+  },
+  "finalReport": {
+    "schema": "hormuz.omarchy-status.v1",
+    "ok": true,
+    "profile": "personal-codex",
+    "enabled": true,
+    "requests": 8,
+    "eligible": 4,
+    "transformed": 4,
+    "tokensSaved": 1928,
+    "tokenPercent": 3.346,
+    "bytesSaved": 8588,
+    "bytePercent": 3.389,
+    "cacheReadTokens": 0
+  },
+  "pluginQmlErrorCount": 0
+}
