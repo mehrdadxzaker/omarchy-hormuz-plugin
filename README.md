@@ -88,7 +88,7 @@ There is no claim here that that version is published to PyPI.
 ```sh
 python3 -m venv ~/.local/share/hormuz-venv
 ~/.local/share/hormuz-venv/bin/python -m pip install \
-  'hormuz[client,context] @ git+https://github.com/mehrdadxzaker/hormuz.git@99b0435765c1d4a736c1cf5438216f4c5c434364'
+  'hormuz[client,context] @ git+https://github.com/Xpounder-com/hormuz.git@99b0435765c1d4a736c1cf5438216f4c5c434364'
 ~/.local/share/hormuz-venv/bin/hormuz context resources install
 ~/.local/share/hormuz-venv/bin/hormuz personal contract --json
 ```

@@ -7,15 +7,18 @@ Apple identities, DNS, deployments, or billing.
 
 ## Prepared changes
 
-The plugin install URL, QA source link, and pinned Hormuz package URL use the
-personal owner. The Hormuz revision remains
+The plugin install URL and QA source link use the personal owner. Hormuz stays
+in Xpounder while its development continues, so its pinned package URL retains
+`Xpounder-com/hormuz`. The Hormuz revision remains
 `99b0435765c1d4a736c1cf5438216f4c5c434364`; no CLI contract, permissions,
 installer behavior, or runtime evidence has been requalified by an owner change.
 
 ## Later cutover
 
-Move Hormuz before, or with, this plugin. Merge the staged URLs once both
-personal repositories exist. Existing installations should refresh their Git
+Move this plugin independently while Hormuz remains in Xpounder. Merge the
+plugin's staged install and QA URLs once the personal plugin repository exists.
+Update the pinned package URL's owner only when Hormuz moves later; preserve
+the revision. Existing installations should refresh their Git
 source deliberately, preserving local widget settings. Validate the plugin
 with Omarchy on the target system and verify the pinned Hormuz CLI before
 resuming use. Current router main has changed since that pin; upgrading the
