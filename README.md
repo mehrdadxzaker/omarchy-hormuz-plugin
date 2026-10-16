@@ -70,7 +70,7 @@ leaves the validated folder for you to inspect and prints a nonzero result.
 You can also install this standalone repository with Omarchy's normal flow:
 
 ```sh
-omarchy plugin add https://github.com/Xpounder-com/omarchy-hormuz-plugin --enable
+omarchy plugin add https://github.com/mehrdadxzaker/omarchy-hormuz-plugin --enable
 ```
 
 This command installs the current upstream branch. Marketplace verification,
@@ -88,7 +88,7 @@ There is no claim here that that version is published to PyPI.
 ```sh
 python3 -m venv ~/.local/share/hormuz-venv
 ~/.local/share/hormuz-venv/bin/python -m pip install \
-  'hormuz[client,context] @ git+https://github.com/Xpounder-com/hormuz.git@99b0435765c1d4a736c1cf5438216f4c5c434364'
+  'hormuz[client,context] @ git+https://github.com/mehrdadxzaker/hormuz.git@99b0435765c1d4a736c1cf5438216f4c5c434364'
 ~/.local/share/hormuz-venv/bin/hormuz context resources install
 ~/.local/share/hormuz-venv/bin/hormuz personal contract --json
 ```
@@ -211,3 +211,5 @@ provider-free Linux checks. Official references:
 
 Apache-2.0. The plugin uses public Omarchy/Quickshell interfaces and the
 separately installed Hormuz CLI. It ships no Omarchy, Quickshell, or Qt runtime.
+
+Planned GitHub ownership change: see [transfer preparation](docs/PERSONAL_TRANSFER.md).
