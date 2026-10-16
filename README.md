@@ -70,7 +70,7 @@ leaves the validated folder for you to inspect and prints a nonzero result.
 You can also install this standalone repository with Omarchy's normal flow:
 
 ```sh
-omarchy plugin add https://github.com/Xpounder-com/omarchy-hormuz-plugin --enable
+omarchy plugin add https://github.com/mehrdadxzaker/omarchy-hormuz-plugin --enable
 ```
 
 This command installs the current upstream branch. Marketplace verification,
@@ -211,3 +211,5 @@ provider-free Linux checks. Official references:
 
 Apache-2.0. The plugin uses public Omarchy/Quickshell interfaces and the
 separately installed Hormuz CLI. It ships no Omarchy, Quickshell, or Qt runtime.
+
+Planned GitHub ownership change: see [transfer preparation](docs/PERSONAL_TRANSFER.md).

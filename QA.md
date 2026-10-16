@@ -69,7 +69,7 @@ helper termination and timeout cleanup for a SIGTERM-ignoring descendant.
 ## Desktop evidence
 
 Final native UI results and source-file fingerprints are recorded in
-[the runtime record](https://github.com/Xpounder-com/omarchy-hormuz-plugin/blob/main/evidence/runtime.json).
+[the runtime record](https://github.com/mehrdadxzaker/omarchy-hormuz-plugin/blob/main/evidence/runtime.json).
 Screenshots are from the actual
 Omarchy process, inspected before publication. The root preview shows synthetic
 measurements and contains no customer content or credentials.
